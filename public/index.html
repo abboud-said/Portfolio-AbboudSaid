@@ -1,0 +1,203 @@
+dws
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" id="check2">
+            <i style="cursor: pointer;" class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <input type="checkbox" id="check">
+            <label for="check" id="check2">
+                <i style="cursor: pointer;" class="fas fa-times"></i>
+            </label>
+            <li><a id="active" href="index.html">Startpage</a></li>
+            <li><a style="cursor: pointer;" onClick="document.getElementById('startsida').scrollIntoView();">about me</a></li>
+            <li><a style="cursor: pointer;" onClick="document.getElementById('kontakta').scrollIntoView();">contact me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li id="mediaItem1"><a href="https://www.facebook.com/aboud.abosaied" id="media" class="fab fa-facebook-square"></a><a href="https://www.instagram.com/aboudsaid/" id="media" class="fab fa-instagram"></a></li>
+            <li id="mediaItem2"><a href="https://www.facebook.com/aboud.abosaied" id="media" class="fab fa-facebook-square"></a><a href="https://www.instagram.com/aboudsaid/" id="media" class="fab fa-instagram"></a></li>
+        </ul>
+    </nav>
+
+ <!-- Bildspel på startsidan -->
+ <section id="omMig">
+    <div id="omMigContainer">
+        <button id="bildspel">Stoppa bildspel</button>
+        <h1 id="rubrik" style="color: rgba(255, 255, 255, 0.521);">Hello! I'm </h1>
+        <h1 id="rubrik" style="font-size: 50px; margin: 0;">Aboud Said</h1>
+        <h1 id="rubrik" style="color: rgba(255, 255, 255, 0.521);">A software developer.</h1>
+    </div>
+</section>
+
+ 
+
+     <!-- startsida (språk & kunskaper) -->
+     <section id="startsida">
+        <div style="margin: 10vh 0;">
+            <h1 id="rubrik">Languages</h1>
+            <div id="språkContainer">
+                <div class="språk">
+                    <h3 id="rubrik">Arabic</h3>
+                    <p id="text">Native speacker.</p>
+                </div>
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">Swedish.</h3>
+                    <p id="text">Nativ speacker.</p>
+                </div>
+                <div class="språk">
+                    <h3 id="rubrik">English</h3>
+                    <p id="text">Professional speacker.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 10vh 0;">
+            <h1 id="rubrik">Technical Skills</h1>
+
+            <div id="språkContainer">
+             
+                <div class="språk">
+                    <h3 id="rubrik">HTML </h3>
+                   
+                </div>
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">CSS </h3>
+                    
+                </div>
+                <div class="språk">
+                    <h3 id="rubrik">Javascript </h3>
+                </div>
+            
+            </div>
+            <br>
+
+            <div id="språkContainer">
+             
+                <div class="språk">
+                    <h3 id="rubrik">Java</h3>
+                </div>
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">C#</h3>
+                </div>
+                <div class="språk">
+                    <h3 id="rubrik">SQL</h3>
+                </div>
+
+            </div>                
+                <br>
+
+                <div id="språkContainer">   
+
+                <div class="språk">
+                    <h3 id="rubrik">Clojure</h3>
+                </div>
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">Python</h3>
+                </div>
+                
+                <div class="språk">
+                    <h3 id="rubrik">Ruby</h3>
+                </div>
+                </div>
+                <br>
+
+                <div id="språkContainer">  
+
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">Ruby on Rails</h3>
+                </div>
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">.NET (ASP.NET, .NET Core)</h3>
+                </div>
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">Entity Framework</h3>
+                </div>
+                </div>
+                <br>
+
+            
+
+            <div id="språkContainer">
+               
+                <div class="språk">
+                    <h3 id="rubrik">Power BI</h3>
+                </div>
+                <div class="språk" id="språk">
+                    <h3 id="rubrik">Microsoft Dynamics 365</h3>
+                </div>
+                <div class="språk">
+                    <h3 id="rubrik">GitHub</h3>
+                </div>
+             </div>
+             <br>
+
+                <div id="språkContainer">
+                <div class="språk">
+                    <h3 id="rubrik">Visual Studio</h3>
+                </div>
+                </div>
+                <br>
+
+            
+            </div>
+
+
+        </div>
+
+</body>
+</html>
+
+
+  <!-- Kontakta mig form -->
+  <div>
+    <h1 id="rubrik">Contact me</h1>
+    <form action="mailto:abboudsaid6@gmail.com" id="kontakta">
+        <div id="namn">
+            <label for="namnBox">Name</label>
+            <input type="text" name="namn" id="namnBox"/>
+        </div>
+        <div id="email">
+            <label for="emailBox">Email</label>
+            <input type="text" name="email" id="emailBox"/>
+        </div>
+        <div id="medelande">
+            <label for="medelandeBox">Message</label>
+            <textarea name="medelande" id="medelandeBox"></textarea>
+        </div>
+        <div>
+            <button id="skicka" type="submit" form="kontakta">Send</button>
+        </div>
+    </form>
+</div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color: rgba(36, 44, 56);">
+<div id="footer">
+    <h3 id="rubrik">Navigera</h3>
+    <a id="footerText" href="index.html">Startsida</a>
+    <a id="footerText" style="cursor: pointer;" onClick="document.getElementById('språkContainer').scrollIntoView();">Om mig</a>
+    <a id="footerText" style="cursor: pointer;" onClick="document.getElementById('kontakta').scrollIntoView();">Kontakta mig</a>
+    <a id="footerText" href="portfolio.html">Portfolio</a>
+    <br>
+    <h3 id="rubrik">Hitta mig</h3>
+    <a id="footerMedia" style="font-size: 25px; margin-right: 0.5vw;" href="https://www.facebook.com/aboud.abosaied" class="fab fa-facebook-square"></a>
+    <a id="footerMedia" style="font-size: 25px; margin-right: 0.5vw;" href="https://www.instagram.com/aboudsaid/" class="fab fa-instagram"></a>
+</div>
+</footer>
+
+<!-- Knapp som skrollar upp -->
+<button id="topButton" onClick="document.getElementById('top').scrollIntoView();"><i class="fas fa-chevron-up"></i></button>
+</body>
+</HTML>
