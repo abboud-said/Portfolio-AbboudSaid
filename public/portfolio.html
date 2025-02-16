@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Aboud Said - Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+        <!-- anchor för att skrolla till -->
+        <a id="top"></a>
+
+        <!-- Navigation bar -->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" id="check2">
+                <i style="cursor: pointer;" class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <input type="checkbox" id="check">
+                <label for="check" id="check2">
+                    <i style="cursor: pointer;" class="fas fa-times"></i>
+                </label>
+                <li><a href="index.html">Startpage</a></li>
+                <li><a style="cursor: pointer;" onClick="document.getElementById('startsida').scrollIntoView();">Projects</a></li>
+                <li><a style="cursor: pointer;" onClick="document.getElementById('kontakta').scrollIntoView();">Contact me</a></li>
+                <li><a id="active" href="portfolio.html">Portfolio</a></li>
+                <li id="mediaItem1"><a href="https://www.facebook.com/aboud.abosaied" id="media" class="fab fa-facebook-square"></a><a href="https://www.instagram.com/aboudsaid/" id="media" class="fab fa-instagram"></a></li>
+                <li id="mediaItem2"><a href="https://www.facebook.com/aboud.abosaied" id="media" class="fab fa-facebook-square"></a><a href="https://www.instagram.com/aboudsaid/" id="media" class="fab fa-instagram"></a></li>
+            </ul>
+        </nav>
+
+        <!-- Bildspel på startsidan -->
+        <section id="omMig">
+            <div id="omMigContainer">
+                <button id="bildspel">Stoppa bildspel</button>
+                <h1 id="rubrik" style="font-size: 50px; margin: 0;">Portfolio</h1>
+            </div>
+        </section>
+
+        <!-- Portfolio startsida (projekt) -->
+        <section id="startsida">
+            <div style="margin: 10vh 0;">
+                <h1 id="rubrik">My Projects</h1>
+                <div id="språkContainer">
+                    <div class="språk">
+                        <h3 id="rubrik">Project 1</h3>
+                        <p id="text">Project 1.</p>
+                    </div>
+                    <div class="språk" id="språk">
+                        <h3 id="rubrik">Project 2</h3>
+                        <p id="text">Project 2.</p>
+                    </div>
+                    <div class="språk">
+                        <h3 id="rubrik">Project 3</h3>
+                        <p id="text">Project 3.</p>
+                    </div>
+                </div>
+                <br>
+                <div id="språkContainer">
+                    <div class="språk">
+                        <h3 id="rubrik">Project 4</h3>
+                        <p id="text">Project 4.</p>
+                    </div>
+                    <div class="språk" id="språk">
+                        <h3 id="rubrik">Project 5</h3>
+                        <p id="text">Project 5.</p>
+                    </div>
+                    <div class="språk">
+                        <h3 id="rubrik">Project 6</h3>
+                        <p id="text">Project 6.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kontakta mig form -->
+            <div>
+                <h1 id="rubrik">Contact me</h1>
+                <form action="mailto:abboudsaid6@gmail.com" id="kontakta">
+                    <div id="namn">
+                        <label for="namnBox">Name</label>
+                        <input type="text" name="namn" id="namnBox"/>
+                    </div>
+                    <div id="email">
+                        <label for="emailBox">Email</label>
+                        <input type="text" name="email" id="emailBox"/>
+                    </div>
+                    <div id="medelande">
+                        <label for="medelandeBox">Message</label>
+                        <textarea name="medelande" id="medelandeBox"></textarea>
+                    </div>
+                    <div>
+                        <button id="skicka" type="submit" form="kontakta">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="background-color: rgba(36, 44, 56);">
+            <div id="footer">
+                <h3 id="rubrik">Navigation</h3>
+                <a id="footerText" href="index.html">Startpage</a>
+                <a id="footerText" style="cursor: pointer;" onClick="document.getElementById('språkContainer').scrollIntoView();">Project</a>
+                <a id="footerText" style="cursor: pointer;" onClick="document.getElementById('kontakta').scrollIntoView();">Contact me</a>
+                <a id="footerText" href="portfolio.html">Portfolio</a>
+                <br>
+                <h3 id="rubrik">Find me</h3>
+                <a id="footerMedia" style="font-size: 25px; margin-right: 0.5vw;" href="https://www.facebook.com/aboud.abosaied" class="fab fa-facebook-square"></a>
+                <a id="footerMedia" style="font-size: 25px; margin-right: 0.5vw;" href="https://www.instagram.com/aboudsaid/" class="fab fa-instagram"></a>
+            </div>
+        </footer>
+
+        <!-- Knapp som skrollar upp -->
+        <button id="topButton" onClick="document.getElementById('top').scrollIntoView();"><i class="fas fa-chevron-up"></i></button>
+    </body>
+</HTML>
